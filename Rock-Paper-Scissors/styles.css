@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:lightsteelblue;
+}
+
+header{
+    background: white;
+    padding: 20px;
+}
+
+header > h1{
+    color: black;
+    text-align: center;
+    font-family:  monospace;
+    font-size: xx-large;
+}
+
+.score-board{
+    margin: 20px auto;
+    border: 3px solid white;
+    width: 200px;
+    font-size: 46px;
+    text-align: center;
+    padding: 10px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+.badge{
+    background: coral;
+    color: black;
+    padding: 4px 6px;
+    font-size: 20px;
+}
+
+#user-label{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
+
+#computer-label{
+    position: absolute;
+    top: 20px;
+    right: -25px;
+}
+
+.result{
+    font-size: 30px;
+    color: black;
+}
+
+.result > p{
+    text-align: center;
+    
+    font-weight: bold;
+}
+
+.choices{
+    margin: 40px 10px;
+    text-align: center;
+    
+}
+
+.choice{
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 100px;
+    margin: 0px 10px;
+    transition: all 0.3s ease-in;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background: steelblue;
+}
+
+#action-message{
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.info{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.green-glow{
+    border: 5px solid green ;
+}
+
+.red-glow{
+    border: 5px solid red ;
+}
+
+.grey-glow{
+    border: 5px solid gray; 
+}
