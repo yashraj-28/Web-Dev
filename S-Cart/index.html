@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>shop</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!--navbar-->
+  
+  <header id="header">
+    <nav class="navbar navbar-expand-lg px-4  n-id" style="background: rgb(189, 184, 184);">
+      <a href="#" class="navbar-brand">
+        <img src="logo.svg" class="navbar-image" alt="brand-logo" srcset="">
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+        <span class="toggler-icon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-items active">
+            <a href="#header" class="nav-link">Home</a>
+          </li>
+          <li class="nav-items">
+            <a href="#ourstore"  class="nav-link" id="store">Store</a>
+          </li>
+          <li class="nav-items ">
+            <a href="#about" class="nav-link">About Us</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex">
+          <!--contact info-->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+            </span>
+            <p class="mb-0">+ 123 456 789</p>
+          </div>
+          <!--cart button-->
+          <!-- <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3">
+              <i class="fas fa-shopping-cart cart-icon" aria-hidden="true"></i>
+            </span><sup>
+            <p class=" item-count" id="item-count"></p></sup>
+          </div> -->
+        </div>
+      </div>
+    </nav>
+
+    <!--banner-->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h3 class="banner-title display-3">Bakery Shop</h3>
+          <a href="" class="btn btn-dark btn-lg my-3 banner-link">Explore</a>
+        </div>
+        <!--Cart Overlay-->
+        <div class="cart" id="cart">
+          <h4 class="text-center py-2" style="font-size: 2rem;">Your Cart</h4>
+          <!--cart-item-->
+          <!-- <div class="cart-item d-flex justify-content-between my-3">
+            <img src="img-cart/cake-2.jpeg" alt="" class="img-fluid rounded-circle" id="item-img">
+            <div class="item-text">
+              <p id="cart-item-title" class="mb-0">cart item</p>
+              <span> <i class="fas fa-rupee-sign    "></i></span>
+              <span id="cart-item-price" class="cart-item-price mb-0">10</span>
+            </div>
+            <a href="#" id="cart-item-remove" class="cart-item-remove">
+              <i class="fa fa-trash" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="cart-item d-flex justify-content-between my-3">
+            <img src="img-cart/cupcake-1.jpeg" alt="" class="img-fluid rounded-circle" id="item-img">
+            <div class="item-text">
+              <p id="cart-item-title" class="mb-0">cart item</p>
+              <span> <i class="fas fa-rupee-sign    "></i></span>
+              <span id="cart-item-price" class="cart-item-price mb-0">10</span>
+            </div>
+            <a href="#" id="cart-item-remove" class="cart-item-remove">
+              <i class="fa fa-trash" aria-hidden="true"></i></a>
+          </div> -->
+          <!--Cart Total-->
+          <div class="cart-total-container d-flex justify-content-around mt-5">
+            <h4>Total</h4>
+            <h4><i class="fas fa-rupee-sign"></i> <strong id="cart-item-total"></strong></h4>
+          </div>
+          <!--Cart-Buttons-->
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-light btn-outline-danger btn-lg">Clear</a>
+            <a href="#" id="checkout-cart" class="btn btn-light btn-outline-dark btn-lg">Checkout</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--About Section-->
+  <section class="about py-5" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h4 class="display-3">About Us</h4>
+          <p class="my-4 text-muted w-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora corporis quae temporibus esse excepturi veniam?
+          </p>
+          <!-- <a href="" class="btn btn-dark btn-lg  my-3 banner-link">Explore</a> -->
+        </div>
+        <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
+          <div class="about-img__container">
+            <img src="pexels-miguel-á-padriñán-1591057.jpg" alt="sweets-1" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <!--Store Section-->
+  <section  class="store " id="ourstore">
+    <div class="container">
+      <!--Store-Title-->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <!-- <h3 class="display-3">Store</h3> -->
+        </div>
+      </div>
+      <!--Filter-Buttons-->
+      <!-- <div class="row">
+        <div class="col-lg-8 mx-auto d-flex justify-content around sortBtn flex-wrap">
+          <a href="#" class="btn btn-secondary btn-lg btn-dark filter-btn m-4" data-filter="all">all</a>
+          <a href="#" class="btn btn-secondary btn-lg btn-dark filter-btn m-4" data-filter="all">all</a>
+          <a href="#" class="btn btn-secondary btn-lg btn-dark filter-btn m-4" data-filter="all">all</a>
+          <a href="#" class="btn btn-secondary btn-lg btn-dark filter-btn m-4" data-filter="all">all</a>
+        </div>
+      </div> -->
+      <!--Store Items-->
+
+      <!-- <div class="row store-items" id="store-items">
+        
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/sweets-1.jpeg" alt="sweets-1" class="card-img-top store-img" >
+              <span class="store-item-icon">
+                <button class="btn btn-secondary btn-dark btn-lg  buy-icon">Buy<i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text row ">
+                <div class="col-10 col-sm-6 mx-auto">
+                <h4 id="store-item-name">Sweets</h4>
+               
+              </div>
+              <div class="col-10 col-sm-6 mx-auto">
+                <h4 id="store-item-value"><i class="fas fa-rupee-sign    "style="font-size:1.5rem;"> 10</i></h4>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        
+          <div class="row" >
+            <div class="col-10 mx-auto col-md-6 my-5">
+              <h4 class="display-3">Our Store</h4>
+              <p class="my-4 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora corporis quae temporibus esse excepturi veniam?
+              </p>
+              <p class="my-4 text-muted w-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora corporis quae temporibus esse excepturi veniam?
+              </p>
+              <a href="store.html" class="btn btn-success btn-lg  my-3 banner-link" >Go to Store</a>
+            </div>
+            <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
+              <div class="about-img__container">
+                <!-- <img src="pexels-miguel-á-padriñán-1591057.jpg" alt="sweets-1" class="img-fluid"> -->
+                <div id="carouselId" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselId" data-slide-to="1"></li>
+                    <li data-target="#carouselId" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <img src="img/cake-1.jpeg" alt="First slide" class="img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/sweets-3.jpeg" alt="Second slide" class="img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cupcake-2.jpeg" alt="Third slide" class="img-fluid">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer id="footer">
+    <div class="row ">
+      <div class="col-10 col-md-6 col-lg-4  text-center">
+        <h3>Follow Us</h3>
+        <!-- <a href="#" class="btn btn-secondary btn-lg"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a><br> -->
+        <a href="https://github.com/yashraj-28" target="_blank" class="btn btn-secondary btn-lg footer-icon"><i class="fab fa-github" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-10 col-md-6 col-lg-4  text-center">
+        <h3>Terms Of Service</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia repellendus necessitatibus quo iure natus quod totam quos distinctio eveniet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia repellendus necessitatibus quo iure natus quod totam quos distinctio eveniet.</p>
+      </div>
+      <div class="col-10 col-md-6 col-lg-4  text-center">
+        <h3>More Info</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci numquam ducimus dignissimos alias eum deserunt amet blanditiis quis odio culpa.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+  
+</body>
+
+</html>
