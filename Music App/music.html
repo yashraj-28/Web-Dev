@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="./music-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title">Song Name</h2>
+            <h3 id="artist">Artist</h3>
+            <div class="img_container">
+                <img src="./images/hey.jpg" alt="" srcset="">
+            </div>
+            <audio src="./songs/010 - Linkin Park - Castle Of Glass.mp3"></audio>
+            <!--Progress bar-->
+            <div class="progressbar_container" id="progress_container">
+                <div class="duration">
+                    <div id="current_time">0:00</div>
+                    <div id="total_time">3:00</div>
+                </div>
+                <div class="progress_bar" id="progress_bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            <!--Controls-->
+            <div class="music_controls">
+                <i class="fa fa-backward" aria-hidden="true" id="prev"></i>
+                <i class="fa fa-play" aria-hidden="true" id="play"></i>
+                <i class="fa fa-forward" aria-hidden="true" id="next"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="./music-app.js"></script>
+</body>
+</html>
